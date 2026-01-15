@@ -1,3 +1,7 @@
+variable "plan" {
+    description = "app service plan "
+}
+
 variable "rg" {
     description = "resource group name"
     default = "RG-Gitdemo"
@@ -9,7 +13,12 @@ variable "location" {
      default = "centralindia"
 }
 
-variable "keyname" {
-    description = "key vault name"
-    default = "New-key-secret1"
+variable "os_type" {
+    default = "Windows"
+  
+}
+
+variable "sku_name" {
+    default = "D1"
+  
 }
